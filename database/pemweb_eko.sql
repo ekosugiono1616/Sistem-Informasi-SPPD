@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `admin` (
   `id_admin` int(5) NOT NULL,
   `nama_lengkap` varchar(100) DEFAULT NULL,
-  `email` varchar(20) DEFAULT NULL,
+  `email` varchar(50) DEFAULT NULL,
   `no_hp` varchar(20) DEFAULT NULL,
   `username` varchar(20) DEFAULT NULL,
   `password` varchar(20) DEFAULT NULL,
@@ -41,7 +41,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id_admin`, `nama_lengkap`, `email`, `no_hp`, `username`, `password`, `jk`) VALUES
-(3, 'Eko Sugiono', 'intanbputri7@gmail.c', '11111111111111111111', 'eko', 'eko', '');
+(3, 'Eko Sugiono', 'ekosugion@gmail.com', '11111111111111111111', 'eko', 'eko', '');
 
 --
 -- Indexes for dumped tables
