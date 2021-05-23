@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: May 23, 2021 at 09:54 AM
+-- Generation Time: May 23, 2021 at 11:38 AM
 -- Server version: 10.1.19-MariaDB
 -- PHP Version: 5.6.28
 
@@ -41,53 +41,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id_admin`, `nama_lengkap`, `email`, `no_hp`, `username`, `password`, `jk`) VALUES
-(3, 'Intan Berliana Putri', 'intanbputri7@gmail.c', '11111111111111111111', 'caca', 'caca', '');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `galeri`
---
-
-CREATE TABLE `galeri` (
-  `id_galeri` int(5) NOT NULL,
-  `id_video` varchar(5) DEFAULT NULL,
-  `nama_galeri` varchar(50) DEFAULT NULL,
-  `foto` varchar(100) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `galeri`
---
-
-INSERT INTO `galeri` (`id_galeri`, `id_video`, `nama_galeri`, `foto`) VALUES
-(19, '16', 'trahean', 'Dam_Trinsing_1_1.jpg'),
-(20, '16', 'danau trahean', 'DAM-Trinsing_1.jpg'),
-(21, '17', 'wisata pal 18 ', 'IMG-20170628-WA0004.jpg'),
-(22, '16', 'kota muara teweh', 'download.jpg'),
-(23, '16', 'kota muara tewehdd', 'Bandara_Muhammad_Sidik.jpg'),
-(24, '16', 'kota muara tewehaa', 'download (2).jpg');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `video`
---
-
-CREATE TABLE `video` (
-  `id_video` int(5) NOT NULL,
-  `nama_video` varchar(50) DEFAULT NULL,
-  `cover` varchar(1000) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `video`
---
-
-INSERT INTO `video` (`id_video`, `nama_video`, `cover`) VALUES
-(17, 'Kota Barito Utara', 'Pesona Kabupaten Barito Utara Parrot Anafi.mp4'),
-(18, 'Kota Muara Teweh, Kalimantan Tengahhhhhh', 'Muara Teweh, Kalimantan Tengah.mp4'),
-(38, 'Danau Threan', 'Vlog - Danau Trahean.mp4');
+(3, 'Eko Sugiono', 'intanbputri7@gmail.c', '11111111111111111111', 'eko', 'eko', '');
 
 --
 -- Indexes for dumped tables
@@ -100,18 +54,6 @@ ALTER TABLE `admin`
   ADD PRIMARY KEY (`id_admin`);
 
 --
--- Indexes for table `galeri`
---
-ALTER TABLE `galeri`
-  ADD PRIMARY KEY (`id_galeri`);
-
---
--- Indexes for table `video`
---
-ALTER TABLE `video`
-  ADD PRIMARY KEY (`id_video`);
-
---
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -120,16 +62,6 @@ ALTER TABLE `video`
 --
 ALTER TABLE `admin`
   MODIFY `id_admin` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
---
--- AUTO_INCREMENT for table `galeri`
---
-ALTER TABLE `galeri`
-  MODIFY `id_galeri` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
---
--- AUTO_INCREMENT for table `video`
---
-ALTER TABLE `video`
-  MODIFY `id_video` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
